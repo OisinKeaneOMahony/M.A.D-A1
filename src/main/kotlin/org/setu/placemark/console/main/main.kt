@@ -66,7 +66,6 @@ fun addPlacemark(){
     else
         logger.info("Placemark Not Added")
 }
-
 fun updatePlacemark() {
     println("update Placemark")
     println()
@@ -78,9 +77,9 @@ fun updatePlacemark() {
 
     if(aPlacemark != null) {
         print("Enter a new Title for [ " + aPlacemark.title + " ] : ")
-        aPlacemark.title = readLine()!!
+        tempTitle = readLine()!!
         print("Enter a new Description for [ " + aPlacemark.description + " ] :")
-        aPlacemark.description = readLine()!!
+        tempDescription = readLine()!!
 
         if (!tempTitle.isNullOrEmpty() && !tempDescription.isNullOrEmpty()) {
             aPlacemark.title = tempTitle
